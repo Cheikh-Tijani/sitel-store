@@ -1,0 +1,16 @@
+htdocs/conf/conf.php
+htdocs/conf/conf.php.old
+documents/
+custom/
+test/report/
+nbproject
+default.properties
+.settings/
+.buildpath
+.gitmodules
+dolibarr_install.log
+doxygen_warnings.log
+/.project
+.DS_Store
+.idea
+*.iml
