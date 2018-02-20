@@ -45,11 +45,11 @@ $titleofloginpage=$langs->trans('Login').' @ '.$titletruedolibarrversion;	// $ti
 $disablenofollow=1;
 if (! preg_match('/'.constant('DOL_APPLICATION_TITLE').'/', $title)) $disablenofollow=0;
 
-print top_htmlhead('', $titleofloginpage, 0, 0, $arrayofjs, array(), 0, $disablenofollow);
+print top_htmlhead('','', 0, 0, $arrayofjs, array(), 0, $disablenofollow);
 ?>
 <!-- BEGIN PHP TEMPLATE LOGIN.TPL.PHP -->
 
-<body class="body bodylogin"<?php print empty($conf->global->MAIN_LOGIN_BACKGROUND)?'':' style="background-size: cover; background-position: center center; background-attachment: fixed; background-repeat: no-repeat; background-image: url(\''.DOL_URL_ROOT.'/viewimage.php?cache=1&noalt=1&modulepart=mycompany&file='.urlencode($conf->global->MAIN_LOGIN_BACKGROUND).'\')"'; ?>>
+<body class="body bodylogin">
 
 <?php if (empty($conf->dol_use_jmobile)) { ?>
 <script type="text/javascript">
@@ -60,7 +60,7 @@ $(document).ready(function () {
 </script>
 <?php } ?>
 
-<div class="login_center center">
+<div class="center">
 <div class="login_vertical_align">
 
 <form id="login" name="login" method="post" action="<?php echo $php_self; ?>">
@@ -83,10 +83,10 @@ $(document).ready(function () {
 
 
 <!-- Title with version -->
-<div class="login_table_title center" title="<?php echo dol_escape_htmltag($title); ?>">
+<div class="login_table_title center" title="<?php echo dol_escape_htmltag(''); ?>" style="margin-top:160px">
 <?php
-if ($disablenofollow) echo '<a class="login_table_title" href="https://www.dolibarr.org" target="_blank">';
-echo dol_escape_htmltag($title);
+if ($disablenofollow) echo '<a class="login_table_title" href="#" target="_blank">';
+echo dol_escape_htmltag('BIENVENUE SUR SITEL-STORE');
 if ($disablenofollow) echo '</a>';
 ?>
 </div>
