@@ -949,7 +949,7 @@ td.showDragHandle {
 
 .side-nav {
 	display: table-cell;
-	border-right: 1px solid #d0d0d0;
+	border-right: 1px solid #090407;
 	box-shadow: 3px 0 6px -2px #eee;
 	background: rgb(<?php echo $colorbackvmenu1; ?>);
 }
@@ -980,7 +980,7 @@ div.vmenu, td.vmenu {
 	width: 100%;
 }
 .side-nav {
-	border-bottom: 1px solid #BBB;
+	border-bottom: 1px solid #090407;
 	background: #FFF;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -1223,7 +1223,7 @@ div#id-top {
 <?php if (GETPOST('optioncss','aZ09') == 'print') {  ?>
 	display:none;
 <?php } else { ?>
-	background: rgb(<?php echo $colorbackhmenu1 ?>);
+	background: rgb(0,0,0);
 	/*-webkit-box-shadow: 0 0 6px rgba(0,0,0,0.4);
     box-shadow: 0 0 6px rgba(0,0,0,0.4); */
 	/*
@@ -1560,10 +1560,11 @@ foreach($mainmenuusedarray as $val)
 .bodylogin
 {
 	background: #f0f0f0;
-	display: table;
-    position: absolute;
-    height: 100%;
-    width: 100%;
+	background-size: cover; 
+	background-position: center center; 
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+	background-image: url('img/background.jpg');
 }
 .login_center {
 	display: table-cell;
@@ -2703,7 +2704,7 @@ tr.liste_titre_topborder td {
 	background: transparent;
 }
 tr.liste_titre:last-child th.liste_titre, tr.liste_titre:last-child th.liste_titre_sel, tr.liste_titre td.liste_titre, tr.liste_titre td.liste_titre_sel, form.liste_titre div.tagtd {				/* For last line of table headers only */
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #090407;
 }
 
 
