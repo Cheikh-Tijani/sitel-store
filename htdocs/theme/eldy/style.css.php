@@ -1557,7 +1557,7 @@ foreach($mainmenuusedarray as $val)
 
 /* Login */
 
-.bodylogin
+.container-login100
 {
 	background: #f0f0f0;
 	background-size: cover; 
