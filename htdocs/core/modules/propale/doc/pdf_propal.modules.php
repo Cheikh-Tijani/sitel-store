@@ -1,6 +1,6 @@
 <?php
 /**
- * Copyright (C) 2018 Seydou Zakou <szakou@groupesepro.com>
+ * Copyright (C) 2018 GROUPE SITEL <gsitel@groupesitel>
  *
  * \file htdocs/core/modules/propale/doc/pdf_azur.modules.php
  * \ingroup propale
@@ -232,8 +232,8 @@ class pdf_propal extends ModelePDFPropales
 
                 $pdf->SetFont('', '', $default_font_size);
 
-                $table = '<p></p><table width="100%" cellpadding="5" border="1">';
-                $table .= '<tr style="background-color:#8f4396;color: white">';
+                $table = '<p></p><p></p><p></p><p></p><table width="100%" cellpadding="5" border="1">';
+                $table .= '<tr style="background-color:#090407;color: white">';
                 $table .= '<td width="60%">Désignation</td>';
                 $table .= '<td width="15%" align="right">Prix unitaire</td>';
                 $table .= '<td width="10%" align="right">Quantité</td>';
